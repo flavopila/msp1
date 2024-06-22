@@ -1,0 +1,167 @@
+body {
+  font-family: "Comfortaa", serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION / HEADER */
+
+.sticky-top {
+  position: fixed;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
+  width: 100vW;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.navbar .navbar-toggler {
+  border: 0;
+  margin-right: 3vW;
+}
+
+.navbar-brand {
+  font-family: "Playwrite NG Modern", serif;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+  font-weight: bold;
+  margin-right: 3vW;
+}
+
+.navarrow {
+  z-index: 1;
+  position: absolute;
+  top: 93%;
+  scroll-behavior: smooth;
+}
+
+.navarrow img {
+  height: 40px;
+}
+
+#navlogo {
+  height: 50px;
+  padding-left: 25px;
+}
+
+/* ----------------------------------------------------------INDEX---------------------------------------------------------- */
+
+/* HERO */
+
+.i-hero-container {
+  height: 100vH;
+  background: url(../img/landingbg.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  z-index: 0;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-color: transparent;
+  z-index: 2;
+}
+
+.jumbotron img {
+  height: 35vH;
+}
+
+.jumbotron-header {
+  font-family: "Playwrite NG Modern", serif;
+  color: #fcc308;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+  margin: 25px 0;
+  color: #c2c2c2;
+}
+
+.jumbotron small {
+  font-size: 100%;
+  font-style: italic;
+  color: #a3a3a3;
+}
+
+/* INDEX MENU */
+
+.i-menu-container {
+  height: 100vH;
+  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* INDEX GALLERY */
+
+.i-gallery-container {
+  height: 100vH;
+  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* INDEX REVIEWS */
+
+.i-reviews-container {
+  height: 85vH;
+  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#footer-details {
+  height: 15vH;
+  text-align: center;
+  padding-top: 2vH; 
+}
