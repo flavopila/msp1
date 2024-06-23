@@ -1,6 +1,7 @@
 body {
   font-family: "Comfortaa", serif;
   overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
 }
 
 html {
@@ -53,6 +54,81 @@ html {
 #navlogo {
   height: 50px;
   padding-left: 25px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+#footer-details {
+  max-height: 15vH;
+  min-height: 15vH;
+}
+
+@media only screen and (min-width: 1200px) {
+  #footer-details {
+    overflow: hidden;
+  }
+}
+
+.social-links {
+  padding: 2.5%;
+  font-size: 1.5em;
+}
+
+#footertext {
+  text-align: left;
+  font-size: .75em;
+  padding-right: 0;
+}
+
+#footerlogo {
+  height: 14vH;
+  padding-left: 0;
+}
+
+.btn-bordered {
+  width: 95vW;
+  padding: 5px;
+  border: 2px solid #fcc308;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-bordered {
+    width: 30vW;
+    margin-left: 2vW;
+  }
+
+  #footertext {
+    text-align: right;
+    padding-top: 2vH;
+  }
+
+  #footerlogo {
+    height: 35vH;
+    opacity: 50%;
+    transform: translate(0, -20%);
+  }
+}
+
+/* ----------------------------------------------------------PLACEHOLDER---------------------------------------------------------- */
+
+.placeholder-container {
+  height: 85vH;
+  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 /* ----------------------------------------------------------INDEX---------------------------------------------------------- */
@@ -158,10 +234,4 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-#footer-details {
-  height: 15vH;
-  text-align: center;
-  padding-top: 2vH; 
 }

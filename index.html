@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
-                    <li class="active nav-item ms-auto"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item ms-auto"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item ms-auto"><a class="nav-link" href="/about.html">About</a></li>
                     <li class="nav-item ms-auto"><a class="nav-link" href="/menu.html">Menu</a></li>
                     <li class="nav-item ms-auto"><a class="nav-link" href="/bookings.html">Bookings</a></li>
@@ -91,54 +92,62 @@
     <!------------------------------------------------FOOTER------------------------------------------------>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
-            <div class="col-sm-4" id="">
-                <p class="inline-block">
-                    Copyright 2024 - Sapporo's Finest Sushi Bar & Grill. All Rights Reserved.
-                </p>
-                <p>
-                    Bullring & Grand Central
-                    Moor St, Birmingham
-                    B5 4BU
-                </p>
+            <div class="col-sm-4 p-3">
+                <div class="row p-2"><a class="nav-link btn-bordered" href="#i-landing">Back to Top <i
+                            class="bi bi-arrow-up-circle" aria-hidden="true"></i></a></div>
+                <div class="row p-2"><a class="nav-link btn-bordered" href="/bookings.html">Book a Table <i
+                            class="bi bi-book" aria-hidden="true"></i></a></div>
             </div>
-            <div class="col-sm-4">
-                <div class="row"><a href="#i-landing">Back to Top</a></div>
-                <div class="row"><a href="bookings.html">Reserve a Table</a></div>
-            </div>
-            <div class="col-sm-4">
-                <h5>Social Links</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
+            <div class="col-sm-4 p-3">
+                <h5>Socials</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item social-links">
+                        <a class="nav-link" target="_blank" href="https://www.x.com">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                            <span class="visually-hidden">Twitter</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
+                    <li class="list-inline-item social-links">
+                        <a class="nav-link" target="_blank" href="https://www.instagram.com">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
+                    <li class="list-inline-item social-links">
+                        <a class="nav-link" target="_blank" href="https://www.linkedin.com">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            <span class="visually-hidden">LinkedIn</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
+                    <li class="list-inline-item social-links">
+                        <a class="nav-link" target="_blank" href="https://www.facebook.com">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                            <span class="visually-hidden">Facebook</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
+                    <li class="list-inline-item social-links">
+                        <a class="nav-link" target="_blank" href="https://www.youtube.com">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                            <span class="visually-hidden">YouTube</span>
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-6 pe-0">
+                        <p id="footertext">
+                            B5 4BU<br>
+                            Moor St, Birmingham<br>
+                            Bullring & Grand Central<br>
+                            © 2024 - Sapporo's Finest Sushi Bar & Grill.<br>
+                            All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-6 ps-0">
+                        <img src="../img/logomono.png" id="footerlogo">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
