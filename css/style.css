@@ -6,7 +6,27 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+a {
+  color: #a8a8a8;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eeeeee;
+}
+
+.container-fluid {
+  align-items: center;
+}
+
 
 /* NAVIGATION / HEADER */
 
@@ -68,12 +88,6 @@ footer {
   min-height: 15vH;
 }
 
-@media only screen and (min-width: 1200px) {
-  #footer-details {
-    overflow: hidden;
-  }
-}
-
 .social-links {
   padding: 2.5%;
   font-size: 1.5em;
@@ -95,12 +109,17 @@ footer {
   padding: 5px;
   border: 2px solid #fcc308;
   border-radius: 5px;
+  background-color: black;
 }
 
 @media only screen and (min-width: 1200px) {
+
   .btn-bordered {
-    width: 30vW;
-    margin-left: 2vW;
+    width: 20vW;
+  }
+
+  #footer-details {
+    overflow: hidden;
   }
 
   #footertext {
@@ -110,7 +129,7 @@ footer {
 
   #footerlogo {
     height: 35vH;
-    opacity: 50%;
+    opacity: 20%;
     transform: translate(0, -20%);
   }
 }
@@ -192,6 +211,7 @@ footer {
 
 .i-menu-container {
   height: 100vH;
+  color: white;
   background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -202,6 +222,34 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.i-menudivs {
+  background-color: rgba(0, 0, 0, 0.70);
+  border-radius: 5px;
+  align-items: center;
+}
+
+.i-menudivs table {
+  font-size: .8em;
+}
+
+.i-menudivs img {
+  height: 15vW;
+  border-radius: 50%;
+  border: solid 2px #ffc107;
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .i-menudivs img {
+    height: 10vW;
+    border-radius: 50%;
+    border: solid 2px #ffc107;
+  }
+
 }
 
 /* INDEX GALLERY */
