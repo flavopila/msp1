@@ -241,6 +241,10 @@ footer {
   margin-bottom: 20px;
 }
 
+.i-menudivs table {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
 
 @media only screen and (min-width: 1200px) {
 
