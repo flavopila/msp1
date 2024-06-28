@@ -17,10 +17,12 @@ a {
   -webkit-transition: .5s;
   transition: .5s;
   text-decoration: none;
+  transition: transform 1s;
 }
 
 a:hover {
-  color: #eeeeee;
+  color: #fff;
+  transform: scale(1.2);
 }
 
 .container-fluid {
@@ -58,6 +60,7 @@ a:hover {
 .navbar .navbar-nav a {
   font-weight: bold;
   margin-right: 3vW;
+  transition: transform 1s;
 }
 
 .navarrow {
@@ -91,6 +94,11 @@ footer {
 .social-links {
   padding: 2.5%;
   font-size: 1.5em;
+  transition: transform 1s;
+}
+
+.social-links:hover {
+  transform: scale(1.3);
 }
 
 #footertext {
@@ -104,18 +112,41 @@ footer {
   padding-left: 0;
 }
 
-.btn-bordered {
+.btn-solid {
+  font-weight: bolder;
   width: 95vW;
   padding: 5px;
-  border: 2px solid #fcc308;
+  color: rgb(97, 53, 18);
+  border: solid 2px #ce9313;
   border-radius: 5px;
-  background-color: black;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+}
+
+a.btn-solid {
+  transition: transform .2s;
+}
+
+a.btn-solid:hover {
+  transform: scale(1.1);
+}
+
+.btn-outline {
+  padding: 5px 50px;
+  border: solid 2px #ffcc00;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 0 0 1rem 1rem;
+  transition: transform .2s;
+}
+
+.btn-outline:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 1200px) {
 
-  .btn-bordered {
-    width: 20vW;
+  .btn-solid {
+    width: 18vW;
   }
 
   #footer-details {
@@ -138,7 +169,7 @@ footer {
 
 .placeholder-container {
   height: 85vH;
-  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
+  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -152,20 +183,37 @@ footer {
 
 /* ----------------------------------------------------------INDEX---------------------------------------------------------- */
 
-/* HERO */
+/* CONTAINERS */
 
-.i-hero-container {
+.index-container {
   height: 100vH;
-  background: url(../img/landingbg.jpg) no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  color: white;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.i-contentbox {
+  background-color: rgba(0, 0, 0, 0.70);
+  border-radius: 5px;
+  border: solid 1px;
+  padding: 2vH 2vW 2vH 2vW;
+  align-items: center;
+  max-height: 80vH;
+  max-width: 90vW;
+  overflow: hidden;
+}
+
+/* HERO */
+
+.herobg {
+  background: url(../img/bg/landing.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .opaque-overlay {
@@ -191,7 +239,7 @@ footer {
 
 .jumbotron-header {
   font-family: "Playwrite NG Modern", serif;
-  color: #fcc308;
+  color: #ffcc00;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -207,83 +255,120 @@ footer {
   color: #a3a3a3;
 }
 
-/* INDEX MENU */
+/* MENU */
 
-.i-menu-container {
-  height: 100vH;
-  color: white;
-  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
+.indexbg {
+  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
 
-.i-menudivs {
-  background-color: rgba(0, 0, 0, 0.70);
-  border-radius: 5px;
-  align-items: center;
-}
-
-.i-menudivs table {
+.i-contentbox table {
   font-size: .8em;
 }
 
-.i-menudivs img {
-  height: 15vW;
-  border-radius: 50%;
-  border: solid 2px #ffc107;
-  margin-bottom: 20px;
-}
-
-.i-menudivs table {
+.i-contentbox table {
   background-color: rgba(0, 0, 0, 0.50);
 }
 
+.menulinks {
+  height: 15vW;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+}
+
+a h4 {
+  transition: transform 1s;
+}
+
+a h4:hover {
+  transform: scale(1.07);
+}
+
+/* GALLERY */
+
+.gallerymsg {
+  font-size: .8em;
+  text-align: end;
+}
+
+.gallerycontent {
+  height: 80%;
+}
+
+.fill {
+  height: 100%;
+}
+
+.carouselimg {
+  height: 50%;
+  padding: 5px;
+  align-self: center;
+}
+
+.carouselimg-tall {
+  height: 100%;
+  padding: 5px;
+  align-self: center;
+}
+
+.gal-row-toggle {
+  height: 70%;
+}
+
+.galleryimg {
+  float: left;
+  padding: 5px;
+  transition: transform 1s;
+}
+
+.galleryimg:hover {
+  transform: scale(1.05);
+}
+
+.modal-body {
+  align-content: center;
+  height: auto;
+  width: auto;
+}
+
+#expandphoto {
+  width: 100%;
+}
+
+/* REVIEWS */
+
+#i-reviews {
+  height: 85vH;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1400px) {
+  .gal-row-toggle {
+    height: 100%;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
-
-  .i-menudivs img {
+  .menulinks {
     height: 10vW;
-    border-radius: 50%;
-    border: solid 2px #ffc107;
   }
 
+  .carouselimg {
+    height: 10vW;
+    width: 15vW;
+  }
 }
 
-/* INDEX GALLERY */
+/* ----------------------------------------------------------ABOUT---------------------------------------------------------- */
 
-.i-gallery-container {
-  height: 100vH;
-  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+/* ----------------------------------------------------------MENU---------------------------------------------------------- */
 
-/* INDEX REVIEWS */
+/* ----------------------------------------------------------BOOKINGS---------------------------------------------------------- */
 
-.i-reviews-container {
-  height: 85vH;
-  background: url(../img/bg-whisky.png) no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+/* ----------------------------------------------------------VACANCIES---------------------------------------------------------- */
