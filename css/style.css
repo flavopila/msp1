@@ -165,22 +165,6 @@ a.btn-solid:hover {
   }
 }
 
-/* ----------------------------------------------------------PLACEHOLDER---------------------------------------------------------- */
-
-.placeholder-container {
-  height: 85vH;
-  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
 /* ----------------------------------------------------------INDEX---------------------------------------------------------- */
 
 /* CONTAINERS */
@@ -419,8 +403,68 @@ a h4:hover {
 
 /* ----------------------------------------------------------ABOUT---------------------------------------------------------- */
 
+.about-container {
+  height: 85vH;
+  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 /* ----------------------------------------------------------MENU---------------------------------------------------------- */
+
+.menu-container {
+  height: 85vH;
+  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
 /* ----------------------------------------------------------BOOKINGS---------------------------------------------------------- */
 
+.bookings-container {
+  height: 85vH;
+  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 /* ----------------------------------------------------------VACANCIES---------------------------------------------------------- */
+
+.jobs-container {
+  height: 85vH;
+  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
