@@ -118,7 +118,7 @@ footer {
   padding: 5px;
   color: rgb(97, 53, 18);
   border: solid 2px #ce9313;
-  border-radius: 5px;
+  border-radius: 10px;
   background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
 }
 
@@ -132,9 +132,9 @@ a.btn-solid:hover {
 
 .btn-outline {
   padding: 5px 50px;
-  border: solid 2px #ffcc00;
+  border: solid 1px #fff;
   background-color: #000;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0 0 1rem 1rem;
   transition: transform .2s;
 }
@@ -344,6 +344,58 @@ a h4:hover {
 
 #i-reviews {
   height: 85vH;
+}
+
+#ratings {
+  height: 60vH;
+  align-content: space-evenly;
+}
+
+#reviews {
+  align-content: center;
+}
+
+.site-icon {
+  border: solid 1px #fff;
+  font-size: 80%;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .25rem;
+}
+
+.site-icon:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  /* border-color: rgba(0, 0, 0, 0); */
+}
+
+.site-icon img{
+  width: 40px;
+}
+
+.quote {
+  width: 100%;
+  min-height: 165px;
+  height: fit-content;
+  line-height: 1;
+  padding: 5px 0 5px 0;
+  margin: 5px 0 5px 0;
+}
+
+.quote p {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.quote > p {
+  font-size: 80%;
+}
+
+.quote img{
+  width: 10vH;
+  border-radius: 10px;
 }
 
 /* MEDIA QUERIES */

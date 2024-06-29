@@ -5,7 +5,7 @@
  It is my first milestone project (of 4 total) in my web development course.
 
  
- built using: bootstrap cdn, google fonts, animate.css, pexels stock photos, deepAI image generator
+ built using: bootstrap cdn layout & icons, google fonts, animate.css, pexels stock photos, deepAI image generator.
  
  
  
