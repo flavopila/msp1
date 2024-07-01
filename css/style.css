@@ -563,7 +563,7 @@ ul li {
 
 .bookings-container {
   height: 85vH;
-  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -575,6 +575,20 @@ ul li {
   justify-content: center;
   position: relative;
 }
+
+label, small {
+  display:block;
+}
+
+input, select, textarea {
+  color: #fff;
+  max-width: 100%;
+  min-width: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 1px #ffcc00;
+  border-radius: 5px;
+}
+
 
 /* ----------------------------------------------------------VACANCIES---------------------------------------------------------- */
 

@@ -43,11 +43,51 @@
     </div>
     <!------------------------------------------------BOOKINGS PAGE CONTENTS------------------------------------------------>
     <div class="container-fluid text-center bookings-container">
-        <div class="container">
+        <div class="container-inner">
             <h2 class="text-start">Reserve a Table</h2>
-            <div class="row i-contentbox border-warning">
-                form with date picker, guest amount, arrival time, name and number, additional info box
-            </div>  
+            <div class="i-contentbox border-warning">
+                <form>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-5 m-2">
+                            <label for="name">name</label>
+                            <input type="text" id="name" placeholder="e.g John" required>
+                        </div>
+                        <div class="col-5 m-2">
+                            <label for="guests">guests</label>
+                            <select id="guests" required>
+                                <option value="1">One</option>
+                                <option value="2" selected="selected">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                                <option value="6">Six</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="boxdivider">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-5 m-2">
+                            <label for="email">email</label>
+                            <input type="email" id="email" placeholder="john@doe.com" required>
+                        </div>
+                        <div class="col-5 m-2">
+                            <label for="phone">phone</label>
+                            <input type="tel" inputmode="numeric" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="number" required>
+                        </div>
+                    </div>
+                    <hr class="boxdivider">
+                    <label for="datetime">select a date & time (24 hour format)</label>
+                    <input id="datetime" type="datetime-local" class="m-2">
+                    <hr class="boxdivider">
+                    <label for="requests">Anything else?</label>
+                    <textarea id="requests" name="requests" rows="3" cols="25"
+                        placeholder="Make a special request or tell us any additional information here"></textarea>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn-solid m-3">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <!------------------------------------------------FOOTER------------------------------------------------>
