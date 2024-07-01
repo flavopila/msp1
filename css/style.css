@@ -29,6 +29,24 @@ a:hover {
   align-items: center;
 }
 
+.boxdivider {
+  width: 45%;
+  margin-top: 2px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.pagedivider {
+  width: 45%;
+  margin: 5vH 0;
+  border: solid 1px #ffffff;
+  opacity: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 
 /* NAVIGATION / HEADER */
 
@@ -352,7 +370,7 @@ a h4:hover {
   /* border-color: rgba(0, 0, 0, 0); */
 }
 
-.site-icon img{
+.site-icon img {
   width: 40px;
 }
 
@@ -373,11 +391,11 @@ a h4:hover {
   margin-bottom: 0;
 }
 
-.quote > p {
+.quote>p {
   font-size: 80%;
 }
 
-.quote img{
+.quote img {
   width: 10vH;
   border-radius: 10px;
 }
@@ -421,8 +439,9 @@ a h4:hover {
 /* ----------------------------------------------------------MENU---------------------------------------------------------- */
 
 .menu-container {
-  height: 85vH;
-  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  min-height: 85vH;
+  height: fit-content;
+  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -433,6 +452,111 @@ a h4:hover {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.container-inner {
+  position: absolute;
+  top: 13vh;
+}
+
+.menu-categories > div {
+  max-height: 20vW;
+  max-width: 20vW;
+  border: solid 3px #000;
+  border-radius: 50%;
+  margin: 1.2vW;
+  padding: 2px;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+  position: relative;
+}
+
+
+.menu-categories p {
+  font-size: small;
+  color: #000;
+  margin: 0;
+  padding: 0 15px;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+  border-radius: 15px;
+  border: solid 3px #000;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+.menu-categories img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 4px;
+  background-color: #000;
+}
+
+.menu-categories > div:hover {
+  opacity: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 1vH 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* dynamically applied rules via js */
+
+#menu-content > div {
+  display: none;
+}
+
+#menu-content > div.visible {
+  display: block;
+}
+
+.menu-close {
+  position: absolute;
+  right: 3%;
+  font-size: 28px;
+}
+
+/* ------------------------------------ */
+
+@media only screen and (min-width: 575px) {
+  .menu-categories > div {
+    max-height: 16vW;
+    max-width: 16vW;
+  }
+
+  .menu-categories p {
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-categories > div {
+    max-height: 12vW;
+    max-width: 12vW;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .menu-categories > div {
+    height: 13vW;
+    width: 13vW;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu-categories > div {
+    height: 10vW;
+    width: 10vW;
+    opacity: 70%;
+  }
 }
 
 /* ----------------------------------------------------------BOOKINGS---------------------------------------------------------- */
