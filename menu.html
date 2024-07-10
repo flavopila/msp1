@@ -165,24 +165,6 @@
             </div>
         </div>
     </div>
-    <script>
-        queryString = location.search.substr(1);
-        if (queryString == "appetizers") showDiv(1);
-        if (queryString == "mains") showDiv(2);
-        if (queryString == "specials") showDiv(3);
-        if (queryString == "sushi") showDiv(4);
-        if (queryString == "drinks") showDiv(5);
-        if (queryString == "") showDiv(6);
-        window.history.pushState(null, null, 'menu.html');
-
-        function showDiv(n) {
-            const divs = document.querySelectorAll("#menu-content>div")
-            divs.forEach(d => {
-                d.classList.remove("visible")
-            })
-            divs.item(n - 1).classList.add("visible")
-        }
-    </script>
     <!------------------------------------------------FOOTER------------------------------------------------>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
@@ -246,6 +228,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // all javascript code credit can be found in readme file, i have simply modified what i've found online slightly
+
+        // checks for query string in url
+        queryString = location.search.substr(1);
+        // calls showDiv function with the relevant argument depending on which div needs to be shown
+        if (queryString == "appetizers") showDiv(1);
+        if (queryString == "mains") showDiv(2);
+        if (queryString == "specials") showDiv(3);
+        if (queryString == "sushi") showDiv(4);
+        if (queryString == "drinks") showDiv(5);
+        // if the query string is empty it will show the 6th div which is the default message i desire to be shown
+        if (queryString == "") showDiv(6);
+        // page history is manipulated so that the query string is cleared so that refreshing page takes you back to div 6.
+        window.history.pushState(null, null, 'menu.html');
+
+        // we select the value of n through anchor link hrefs calling the function followed by argument with number corresponding to child div number
+        function showDiv(n) {
+            // defines constant "divs" - direct child divs within the parent div that has id "menu-content"
+            const divs = document.querySelectorAll("#menu-content>div")
+            divs.forEach(d => {
+                // then removes the dynamically added class of "visible" from all child divs
+                d.classList.remove("visible")
+            })
+            // and finally the dynamically added "visible" class is added to the div with one of the argument numbers
+            divs.item(n - 1).classList.add("visible")
+        }
+    </script>
 </body>
 
 </html>

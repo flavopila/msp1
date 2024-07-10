@@ -509,8 +509,7 @@ ul li {
   font-size: 90%;
 }
 
-/* dynamically applied rules via js */
-
+/* These rules are part of javascript functionality not written by me */
 #menu-content > div {
   display: none;
 }
@@ -524,7 +523,6 @@ ul li {
   right: 3%;
   font-size: 28px;
 }
-
 /* ------------------------------------ */
 
 @media only screen and (min-width: 575px) {
