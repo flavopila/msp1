@@ -46,7 +46,7 @@
         <div class="container-inner">
             <h2 class="text-start">Reserve a Table</h2>
             <div class="i-contentbox border-warning">
-                <form>
+                <form action="thankyou.html" method="get">
                     <div class="d-flex justify-content-center">
                         <div class="col-5 m-2">
                             <label for="name">name</label>
@@ -72,8 +72,7 @@
                         </div>
                         <div class="col-5 m-2">
                             <label for="phone">phone</label>
-                            <input type="tel" inputmode="numeric" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                placeholder="number" required>
+                            <input type="tel" placeholder="number" inputmode="numeric" name="phone" id="phone" required aria-label="Phone">
                         </div>
                     </div>
                     <hr class="boxdivider">
