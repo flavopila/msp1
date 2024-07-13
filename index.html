@@ -26,7 +26,8 @@
     <!------------------------------------------------NAVBAR------------------------------------------------>
     <div class="container-fluid sticky-top animate__animated animate__fadeInDown">
         <nav class="navbar navbar-dark navbar-expand-md">
-            <a href="index.html" class="navbar-brand"><img src="assets/img/graphic/logomono.png" id="navlogo">Sapporo's
+            <a href="index.html" class="navbar-brand"><img src="assets/img/graphic/logomono.png" alt="Navbar Logo"
+                    id="navlogo">Sapporo's
                 Finest</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +56,7 @@
                 </section>
             </div>
         </div>
-        <a href="#i-menu" class="navarrow" target="_self"><img src="assets/img/graphic/down.png"></a>
+        <a href="#i-menu" class="navarrow" target="_self"><img src="assets/img/graphic/down.png" alt="Scroll Down"></a>
     </div>
     <!------------------------------------------------MENU------------------------------------------------>
     <div class="container-fluid text-center index-container indexbg" id="i-menu">
@@ -145,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <a href="#i-gallery" class="navarrow" target="_self"><img src="assets/img/graphic/down.png"></a>
+        <a href="#i-gallery" class="navarrow" target="_self"><img src="assets/img/graphic/down.png" alt="Scroll Down"></a>
     </div>
     <!------------------------------------------------GALLERY------------------------------------------------>
     <div class="container-fluid index-container indexbg" id="i-gallery">
@@ -156,21 +157,28 @@
                     data-bs-touch="false">
                     <div class="carousel-inner fill">
                         <div class="carousel-item d-flex flex-column fill active">
-                            <img class="carouselimg" src="assets/img/photo/mochi.png" alt="">
-                            <img class="carouselimg" src="assets/img/photo/kanibroth.png" alt="">
+                            <img class="carouselimg" src="assets/img/photo/mochi.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Mochi">
+                            <img class="carouselimg" src="assets/img/photo/kanibroth.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Crab Broth">
                         </div>
                         <div class="carousel-item d-flex flex-column fill">
-                            <img class="carouselimg" src="assets/img/photo/ramen.png" alt="">
-                            <img class="carouselimg" src="assets/img/photo/platter.png" alt="">
+                            <img class="carouselimg" src="assets/img/photo/ramen.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Ramen">
+                            <img class="carouselimg" src="assets/img/photo/platter.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Sushi Platter">
                         </div>
                         <div class="carousel-item d-flex flex-column fill">
-                            <img class="carouselimg-tall" src="assets/img/photo/char.png" alt="">
+                            <img class="carouselimg-tall" src="assets/img/photo/char.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Blowtorch Flamed Sushi">
                         </div>
                         <div class="carousel-item d-flex flex-column fill">
-                            <img class="carouselimg-tall" src="assets/img/photo/makiroll.png" alt="">
+                            <img class="carouselimg-tall" src="assets/img/photo/makiroll.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Rolling Maki Sushi">
                         </div>
                         <div class="carousel-item d-flex flex-column fill">
-                            <img class="carouselimg-tall" src="assets/img/photo/whetstone.png" alt="">
+                            <img class="carouselimg-tall" src="assets/img/photo/whetstone.png" data-bs-toggle="modal"
+                            data-bs-target="#modal" onclick=check(this) alt="Knife Sharpening">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -188,47 +196,47 @@
                     <div class="row d-xxl-none" style="height: 30%;">
                         <div class="d-flex justify-content-center fill">
                             <img class="galleryimg" src="assets/img/photo/catwalk.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Bar Catwalk">
                             <img class="galleryimg" src="assets/img/photo/ramen.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Ramen">
                             <img class="galleryimg d-none d-lg-block" src="assets/img/photo/platter.png"
-                                data-bs-toggle="modal" data-bs-target="#modal" onclick=check(this)>
+                                data-bs-toggle="modal" data-bs-target="#modal" onclick=check(this) alt="Sushi Platter">
                             <img class="galleryimg d-none d-xl-block" src="assets/img/photo/mochi.png"
-                                data-bs-toggle="modal" data-bs-target="#modal" onclick=check(this)>
+                                data-bs-toggle="modal" data-bs-target="#modal" onclick=check(this) alt="Mochi">
                             <img class="galleryimg" src="assets/img/photo/kanibroth.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Crab Broth">
                             <img class="galleryimg" src="assets/img/photo/bar.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Bar">
                         </div>
                     </div>
                     <div class="row gal-row-toggle justify-content-center">
                         <div class="col-2 p-3 align-items-center fill d-none d-xxl-flex flex-column">
                             <img class="galleryimg fill" src="assets/img/photo/ramen.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Ramen">
                             <img class="galleryimg fill" src="assets/img/photo/platter.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Sushi Platter">
                             <img class="galleryimg fill" src="assets/img/photo/bar.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Bar">
                             <img class="galleryimg fill" src="assets/img/photo/alley.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Japanese Street">
                         </div>
                         <div class="col-8 p-3 d-flex justify-content-center fill">
                             <img class="galleryimg fill" src="assets/img/photo/whetstone.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Knife Sharpening">
                             <img class="galleryimg d-none d-lg-block fill" src="assets/img/photo/char.png"
-                                data-bs-toggle="modal" data-bs-target="#modal" onclick=check(this)>
+                                data-bs-toggle="modal" data-bs-target="#modal" onclick=check(this) alt="Blowtorch Flamed Sushi">
                             <img class="galleryimg fill" src="assets/img/photo/makiroll.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Rolling Maki Sushi">
                         </div>
                         <div class="col-2 p-3 align-items-center fill d-none d-xxl-flex flex-column">
                             <img class="galleryimg fill" src="assets/img/photo/kanibroth.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Crab Broth">
                             <img class="galleryimg fill" src="assets/img/photo/mochi.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Mochi">
                             <img class="galleryimg fill" src="assets/img/photo/catwalk.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Bar Catwalk">
                             <img class="galleryimg fill" src="assets/img/photo/sake.png" data-bs-toggle="modal"
-                                data-bs-target="#modal" onclick=check(this)>
+                                data-bs-target="#modal" onclick=check(this) alt="Japanese Alcohols">
                         </div>
                     </div>
                 </div>
@@ -243,7 +251,7 @@
                 </div>
             </div>
         </div>
-        <a href="#i-reviews" class="navarrow" target="_self"><img src="assets/img/graphic/down.png"></a>
+        <a href="#i-reviews" class="navarrow" target="_self"><img src="assets/img/graphic/down.png" alt="Scroll Down"></a>
     </div>
     <!------------------------------------------------REVIEWS------------------------------------------------>
     <div class="container-fluid text-center index-container indexbg" id="i-reviews">
@@ -252,9 +260,9 @@
                 <div class="col-2 d-none d-lg-block">
                     <h2 class="text-start">Aggregate</h2>
                     <div class="d-grid i-contentbox border-warning" id="ratings">
-                        <div class="site-icon"><img src="assets/img/graphic/gg.png"><br>Google<br>4.5/5</div>
-                        <div class="site-icon"><img src="assets/img/graphic/ta.png"><br>Tripadvisor<br>4.5/5</div>
-                        <div class="site-icon"><img src="assets/img/graphic/fb.png"><br>Faceook<br>4.5/5</div>
+                        <div class="site-icon"><img src="assets/img/graphic/gg.png" alt="Google Reviews"><br>Google<br>4.5/5</div>
+                        <div class="site-icon"><img src="assets/img/graphic/ta.png" alt="TripAdvisor Reviews"><br>Tripadvisor<br>4.5/5</div>
+                        <div class="site-icon"><img src="assets/img/graphic/fb.png" alt="Facebook Reviews"><br>Faceook<br>4.5/5</div>
                     </div>
                 </div>
                 <div class="col-1 d-none d-lg-block"></div>
@@ -265,7 +273,7 @@
                             <div class="i-contentbox quote">
                                 <div class="grid">
                                     <img src="assets/img/photo/happy.png" data-bs-toggle="modal" data-bs-target="#modal"
-                                        onclick=check(this)>
+                                        onclick=check(this) alt="Happy man">
                                     <p>Overly Enthusiastic Man</p>
                                 </div>
                                 <p>"I love this restaurant more than anything in the world! This restaurant saved my
@@ -274,7 +282,7 @@
                             <div class="i-contentbox quote">
                                 <div class="grid">
                                     <img src="assets/img/photo/ceo.png" data-bs-toggle="modal" data-bs-target="#modal"
-                                        onclick=check(this)>
+                                        onclick=check(this) alt="CEO on their phone">
                                     <p>CEO with an IQ of 300</p>
                                 </div>
                                 <p>"I will definitely invest 90% of my income into funding this establishment. The
@@ -285,7 +293,7 @@
                             <div class="i-contentbox quote">
                                 <div class="grid">
                                     <img src="assets/img/photo/weird.png" data-bs-toggle="modal" data-bs-target="#modal"
-                                        onclick=check(this)>
+                                        onclick=check(this) alt="Woman eating sushi">
                                     <p>Weird Lady</p>
                                 </div>
                                 <p>"If this place shut down, I would never eat again."</p>
@@ -293,7 +301,7 @@
                             <div class="i-contentbox quote">
                                 <div class="grid">
                                     <img src="assets/img/photo/cat.png" data-bs-toggle="modal" data-bs-target="#modal"
-                                        onclick=check(this)>
+                                        onclick=check(this) alt="Cat looking at the camera">
                                     <p>My Cat</p>
                                 </div>
                                 <p>"It's pretty good."</p>
@@ -377,7 +385,7 @@
                         </p>
                     </div>
                     <div class="col-6 ps-0">
-                        <img src="assets/img/graphic/logomono.png" id="footerlogo">
+                        <img src="assets/img/graphic/logomono.png" alt="Footer Logo" id="footerlogo">
                     </div>
                 </div>
             </div>
