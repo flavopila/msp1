@@ -553,7 +553,7 @@ input,
 select,
 textarea {
   color: #fff;
-  max-width: 100%;
+  max-width: 95%;
   min-width: 50%;
   background-color: rgba(0, 0, 0, 0.25);
   border: solid 1px #ffcc00;
@@ -567,7 +567,7 @@ textarea {
 
 .jobs-container {
   height: 85vH;
-  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -580,8 +580,82 @@ textarea {
   position: relative;
 }
 
+.vacancy-container {
+  width: 85vW;
+  height: 45vH;
+  display: block;
+  justify-self: center;
+  align-items: center;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 20px;
+}
 
-/* MEDIA QUERIES */
+.vacancy-box {
+  width: 90%;
+  height: fit-content;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.50);
+  border: 1px solid #ffcc00;
+  margin: 10px;
+  padding: 7px;
+}
+
+.vacancy-box p {
+  text-align: left;
+}
+
+.vacancy-box strong {
+  text-decoration: underline;
+}
+
+.btn-vacancy {
+  border-radius: 20px;
+  margin-bottom: 7px;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+  border: 1px solid #ce9313;
+  transition: transform .5s;
+}
+
+.btn-vacancy:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.modal-apply {
+  background: #000;
+  color: #fff;
+  border: solid 1px #fc0;
+}
+
+.btn-close {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* part of this code was taken from a stackoverflow answer */
+/* credit can be found in the readme file */
+input[type='file'] { 
+  font-size: 0; min-width: 0%;
+  border: 0px;
+}
+::file-selector-button { 
+  font-size: initial; 
+  color: #fff;
+  padding: 0 10px;
+  border: solid 1px #fc0;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+::file-selector-button:hover {
+  background-color: #a3a3a3;
+}
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
+
+/* EXTRA SMALL */
 
 @media only screen and (min-width: 575px) {
   .menu-categories>div {
@@ -594,12 +668,27 @@ textarea {
   }
 }
 
+/* SMALL */
+
 @media only screen and (min-width: 768px) {
   .menu-categories>div {
     max-height: 12vW;
     max-width: 12vW;
   }
+
+  .vacancy-container {
+    display: inline-flex;
+    overflow: auto;
+  }
+
+  .vacancy-box {
+    width: 30%;
+    height: 95%;
+    align-content: space-evenly;
+  }
 }
+
+/* MEDIUM */
 
 @media only screen and (min-width: 992px) {
   .menu-categories>div {
@@ -607,6 +696,8 @@ textarea {
     width: 13vW;
   }
 }
+
+/* LARGE */
 
 @media only screen and (min-width: 1200px) {
 
@@ -652,6 +743,8 @@ textarea {
     transform: translate(0, -20%);
   }
 }
+
+/* EXTRA LARGE */
 
 @media only screen and (min-width: 1400px) {
   .gal-row-toggle {
