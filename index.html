@@ -63,7 +63,8 @@
             <h2 class="text-start">Menu</h2>
             <div class="row i-contentbox border-warning">
                 <div class="col d-none d-lg-block">
-                    <a href="menu.html?appetizers"><img class="menulinks" src="assets/img/ai/misosoup.jpg" alt="appetizer"><br>
+                    <a href="menu.html?appetizers"><img class="menulinks" src="assets/img/ai/misosoup.jpg"
+                            alt="appetizer"><br>
                         <h4>Appetizers</h4>
                     </a>
                 </div>
@@ -263,8 +264,8 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="i-contentbox quote">
                                 <div class="grid">
-                                    <img src="assets/img/photo/happy.png" data-bs-toggle="modal"
-                                    data-bs-target="#modal" onclick=check(this)>
+                                    <img src="assets/img/photo/happy.png" data-bs-toggle="modal" data-bs-target="#modal"
+                                        onclick=check(this)>
                                     <p>Overly Enthusiastic Man</p>
                                 </div>
                                 <p>"I love this restaurant more than anything in the world! This restaurant saved my
@@ -272,8 +273,8 @@
                             </div>
                             <div class="i-contentbox quote">
                                 <div class="grid">
-                                    <img src="assets/img/photo/ceo.png" data-bs-toggle="modal"
-                                    data-bs-target="#modal" onclick=check(this)>
+                                    <img src="assets/img/photo/ceo.png" data-bs-toggle="modal" data-bs-target="#modal"
+                                        onclick=check(this)>
                                     <p>CEO with an IQ of 300</p>
                                 </div>
                                 <p>"I will definitely invest 90% of my income into funding this establishment. The
@@ -283,16 +284,16 @@
                         <div class="col-6 d-none d-md-block">
                             <div class="i-contentbox quote">
                                 <div class="grid">
-                                    <img src="assets/img/photo/weird.png" data-bs-toggle="modal"
-                                    data-bs-target="#modal" onclick=check(this)>
+                                    <img src="assets/img/photo/weird.png" data-bs-toggle="modal" data-bs-target="#modal"
+                                        onclick=check(this)>
                                     <p>Weird Lady</p>
                                 </div>
                                 <p>"If this place shut down, I would never eat again."</p>
                             </div>
                             <div class="i-contentbox quote">
                                 <div class="grid">
-                                    <img src="assets/img/photo/cat.png" data-bs-toggle="modal"
-                                    data-bs-target="#modal" onclick=check(this)>
+                                    <img src="assets/img/photo/cat.png" data-bs-toggle="modal" data-bs-target="#modal"
+                                        onclick=check(this)>
                                     <p>My Cat</p>
                                 </div>
                                 <p>"It's pretty good."</p>
@@ -316,19 +317,6 @@
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!------------------------------------------------MODAL------------------------------------------------>
-    <script>
-        function check(img) {
-            document.getElementById("expandphoto").src = img.src;
-        }
-    </script>
-    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-body">
-                <img id="expandphoto">
             </div>
         </div>
     </div>
@@ -395,6 +383,20 @@
             </div>
         </div>
     </footer>
+    <!------------------------------------------------MODAL------------------------------------------------>
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-body">
+                <img id="expandphoto">
+            </div>
+        </div>
+    </div>
+    <!-- Modal functionality and Javascript found on stackoverflow - credit in README file -->
+    <script>
+        function check(img) {
+            document.getElementById("expandphoto").src = img.src;
+        }
+    </script>
 </body>
 
 </html>
