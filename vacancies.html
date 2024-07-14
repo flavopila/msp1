@@ -11,7 +11,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,13 +21,14 @@
 </head>
 
 <body>
-    <!------------------------------------------------NAVBAR------------------------------------------------>
+    <!-- ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ NAVBAR ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ -->
     <div class="container-fluid sticky-top animate__animated animate__fadeInDown">
         <nav class="navbar navbar-dark navbar-expand-md">
-            <a href="index.html" class="navbar-brand"><img src="assets/img/graphic/logomono.png" alt="Navbar Logo" id="navlogo">Sapporo's
+            <a href="index.html" class="navbar-brand"><img src="assets/img/graphic/logomono.png" alt="Navbar Logo"
+                    id="navlogo">Sapporo's
                 Finest</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -41,7 +42,7 @@
             </div>
         </nav>
     </div>
-    <!------------------------------------------------VACANCIES PAGE CONTENTS------------------------------------------------>
+    <!-- ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ VACANCIES PAGE CONTENTS ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ -->
     <div class="container-fluid text-center jobs-container">
         <div class="container-inner d-grid">
             <h2 class="text-center">Available Vacancies</h2>
@@ -57,7 +58,7 @@
                         <strong>Duties:</strong><br> support chefs, prepare food items, maintain kitchen & storage<br>
                         <strong>Requirements:</strong><br> none, but experience preferred
                     </p>
-                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#modal"
                         data-bs-whatever="Kitchen Porter">Apply</button>
                 </div>
                 <div class="vacancy-box">
@@ -66,7 +67,7 @@
                         <strong>Duties:</strong><br> assist chefs in high stress kitchen environment<br>
                         <strong>Requirements:</strong><br> NVQ level 3 + catering experience
                     </p>
-                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#modal"
                         data-bs-whatever="Trainee Chef">Apply</button>
                 </div>
                 <div class="vacancy-box">
@@ -75,16 +76,17 @@
                         <strong>Duties:</strong><br> enthusiastically greet and serve customers<br>
                         <strong>Requirements:</strong><br> none, but experience preferred
                     </p>
-                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#modal"
                         data-bs-whatever="Waiting Staff">Apply</button>
                 </div>
                 <div class="vacancy-box">
                     <h2>Restaurant Manager</h2>
                     <p>
-                        <strong>Duties:</strong><br> deal with constant stress and manage restaurant staff and finances<br>
+                        <strong>Duties:</strong><br> deal with constant stress and manage restaurant staff and
+                        finances<br>
                         <strong>Requirements:</strong><br> ~3 years experience
                     </p>
-                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#modal"
                         data-bs-whatever="Restaurant Manager">Apply</button>
                 </div>
                 <div class="vacancy-box">
@@ -93,13 +95,13 @@
                         <strong>Duties:</strong><br> stock, mix and serve drinks<br>
                         <strong>Requirements:</strong><br> 18+ with catering experience
                     </p>
-                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btn-vacancy" data-bs-toggle="modal" data-bs-target="#modal"
                         data-bs-whatever="Bartender">Apply</button>
                 </div>
             </div>
         </div>
     </div>
-    <!------------------------------------------------FOOTER------------------------------------------------>
+    <!-- ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ FOOTER ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ -->
     <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4 p-3">
@@ -146,7 +148,7 @@
             <div class="col-sm-4">
                 <div class="row">
                     <div class="col-6 pe-0">
-                        <p id="footertext">
+                        <p id="footer-text">
                             B5 4BU<br>
                             Moor St, Birmingham<br>
                             Bullring & Grand Central<br>
@@ -156,18 +158,19 @@
                         </p>
                     </div>
                     <div class="col-6 ps-0">
-                        <img src="assets/img/graphic/logomono.png" alt="Footer Logo" id="footerlogo">
+                        <img src="assets/img/graphic/logomono.png" alt="Footer Logo" id="footer-logo">
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!------------------------------------------------MODAL------------------------------------------------>
-    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <!-- ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ MODAL ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ -->
+    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-apply">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5"></h1>
+                    <h1 class="modal-title fs-5">Dynamic Title</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -179,8 +182,8 @@
                                 <label for="email">email</label>
                                 <input type="email" id="email" placeholder="john@doe.com" required>
                                 <label for="phone">phone</label>
-                                <input type="tel" placeholder="number" inputmode="numeric" name="phone" id="phone"
-                                    required aria-label="Phone">
+                                <input type="tel" placeholder="number" name="phone" id="phone" required
+                                    aria-label="Phone">
                             </div>
                             <div class="col-6 d-grid justify-content-center m-1">
                                 <label for="cv">upload cv</label>
@@ -198,15 +201,16 @@
         </div>
     </div>
     <script>
-        const exampleModal = document.getElementById('exampleModal')
-        if (exampleModal) {
-            exampleModal.addEventListener('show.bs.modal', event => {
+        // Bootstrap variable modal script
+        const modal = document.getElementById('modal')
+        if (modal) {
+            modal.addEventListener('show.bs.modal', event => {
                 // Button that triggered the modal
                 const button = event.relatedTarget
                 // Extract info from data-bs-* attributes
                 const recipient = button.getAttribute('data-bs-whatever')
                 // Update the modal's content.
-                const modalTitle = exampleModal.querySelector('.modal-title')
+                const modalTitle = modal.querySelector('.modal-title')
                 modalTitle.textContent = `Applying for: ${recipient}`
             })
         }

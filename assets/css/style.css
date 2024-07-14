@@ -29,7 +29,7 @@ a:hover {
   align-items: center;
 }
 
-.boxdivider {
+.box-divider {
   width: 45%;
   margin-top: 2px;
   position: relative;
@@ -37,7 +37,7 @@ a:hover {
   transform: translate(-50%);
 }
 
-.pagedivider {
+.page-divider {
   width: 45%;
   margin: 5vH 0;
   border: solid 1px #ffffff;
@@ -119,13 +119,13 @@ footer {
   transform: scale(1.3);
 }
 
-#footertext {
+#footer-text {
   text-align: left;
   font-size: .75em;
   padding-right: 0;
 }
 
-#footerlogo {
+#footer-logo {
   height: 14vH;
   padding-left: 0;
 }
@@ -175,7 +175,7 @@ a.btn-solid:hover {
   position: relative;
 }
 
-.i-contentbox {
+.content-box {
   background-color: rgba(0, 0, 0, 0.70);
   border-radius: 5px;
   border: solid 1px;
@@ -245,15 +245,15 @@ a.btn-solid:hover {
   background-size: cover;
 }
 
-.i-contentbox table {
+.content-box table {
   font-size: .8em;
 }
 
-.i-contentbox table {
+.content-box table {
   background-color: rgba(0, 0, 0, 0.50);
 }
 
-.menulinks {
+.menu-links {
   height: 15vW;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -271,12 +271,12 @@ a h4:hover {
 
 /* GALLERY */
 
-.gallerymsg {
+.gallery-text {
   font-size: .8em;
   text-align: end;
 }
 
-.gallerycontent {
+.gallery-content {
   height: 80%;
 }
 
@@ -284,13 +284,13 @@ a h4:hover {
   height: 100%;
 }
 
-.carouselimg {
+.carousel-img {
   height: 50%;
   padding: 5px;
   align-self: center;
 }
 
-.carouselimg-tall {
+.carousel-img-tall {
   height: 100%;
   padding: 5px;
   align-self: center;
@@ -300,13 +300,13 @@ a h4:hover {
   height: 70%;
 }
 
-.galleryimg {
+.gallery-img {
   float: left;
   padding: 5px;
   transition: transform 1s;
 }
 
-.galleryimg:hover {
+.gallery-img:hover {
   transform: scale(1.05);
 }
 
@@ -316,7 +316,7 @@ a h4:hover {
   width: auto;
 }
 
-#expandphoto {
+#expand-photo {
   width: 100%;
 }
 
@@ -732,11 +732,11 @@ input[type='file'] {
     opacity: 70%;
   }
 
-  .menulinks {
+  .menu-links {
     height: 10vW;
   }
 
-  .carouselimg {
+  .carousel-img {
     height: 10vW;
     width: 15vW;
   }
@@ -749,12 +749,12 @@ input[type='file'] {
     overflow: hidden;
   }
 
-  #footertext {
+  #footer-text {
     text-align: right;
     padding-top: 2vH;
   }
 
-  #footerlogo {
+  #footer-logo {
     height: 35vH;
     opacity: 20%;
     transform: translate(0, -20%);
