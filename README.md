@@ -259,8 +259,38 @@ I have tested my website on Google Chrome, Mozilla Firefox, and Microsoft Edge, 
 </details>
 
 ### PageSpeed Insights Reports - After Optimizations
+<details><summary>index.html</summary>
+<img src="assets/readmefiles/opt-index.png">
+</details>
+<details><summary>about.html</summary>
+<img src="assets/readmefiles/opt-about.png">
+</details>
+<details><summary>menu.html</summary>
+<img src="assets/readmefiles/opt-menu.png">
+</details>
+<details><summary>bookings.html</summary>
+<img src="assets/readmefiles/opt-bookings.png">
+</details>
+<details><summary>vacancies.html</summary>
+<img src="assets/readmefiles/opt-vacancies.png">
+</details>
+<details><summary>thankyou.html</summary>
+<img src="assets/readmefiles/opt-thankyou.png">
+</details>
+
 
 ### Bugfixes/Optimizations
+As you can see, the mobile version of my project can do with some more optimization. I have taken some steps to optimize it overall as recommended by PageSpeed Insights, I have converted all my images from png or jpg to the more modern format of webp, and then compressed them and the pages with more images greatly benefitted from this. On the homepage I was able to identify the LCP (Largest Contentful Paint element) and reduce its impact by compressing the image and reducing its size as well.
+
+I have also been able to increase accessibility and search engine optimization through adding meta descriptions, changing redundant alt tags which would have resulted in screen readers narrating the same phrase twice, and ensuring heading elements are in sequentially-descending order on each page. I also added a title to the Google Maps iframe on the homepage.  
+
+However, I have run into an issue with some pages having an imperfect 'Best Practise' score due to a console error that I am unable to find the cause of. 
+
+<img src="assets/readmefiles/error.png">  
+
+It seems to have something to do with it trying to scan a page called 'empty', so I was advised to create a 404.html page however this didn't seem to affect it. 
+
+I would like to continue to optimize and hopefully iron out some of these issues in the future.
 
 # Deployment
 ### GitHub Pages
