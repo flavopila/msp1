@@ -126,6 +126,7 @@ The about page is fairly straightforward. One div containing an image of the fic
 ### Menu 
 <details><summary>Menu Screenshot</summary>
 <img src="assets/readmefiles/features-menu.png" alt="menu page" width="1000">
+</details>
 <details><summary>Menu gif</summary>
 <img src="assets/readmefiles/features-menu-function.gif" alt="menu page" width="1000">
 </details>
