@@ -109,6 +109,10 @@ footer {
   min-height: 15vH;
 }
 
+#social-text {
+  font-size: 1.5em;
+}
+
 .social-links {
   padding: 2.5%;
   font-size: 1.5em;
@@ -189,7 +193,7 @@ a.btn-solid:hover {
 /* HERO */
 
 .herobg {
-  background: url(../img/bg/landing.jpg) no-repeat bottom right fixed;
+  background: url(../img/bg/landing.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -238,7 +242,7 @@ a.btn-solid:hover {
 /* MENU */
 
 .indexbg {
-  background: url(../img/bg/whisky.png) no-repeat bottom right fixed;
+  background: url(../img/bg/whisky.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -381,7 +385,7 @@ a h4:hover {
 
 .about-container {
   height: 110vH;
-  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -398,7 +402,7 @@ a h4:hover {
   padding: 0;
   min-width: 85vW;
   min-height: 40vH;
-  background: linear-gradient(to bottom, #00000000 0%, #000000 100%), url(../img/photo/headchef.png) no-repeat top fixed;
+  background: linear-gradient(to bottom, #00000000 0%, #000000 100%), url(../img/photo/headchef.webp) no-repeat top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -441,7 +445,7 @@ a h4:hover {
 .menu-container {
   min-height: 85vH;
   height: fit-content;
-  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -531,7 +535,7 @@ ul li {
 
 .bookings-container {
   height: 85vH;
-  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -567,7 +571,7 @@ textarea {
 
 .jobs-container {
   height: 85vH;
-  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -657,7 +661,7 @@ input[type='file'] {
 
 .thank-you-container {
   height: 85vH;
-  background: url(../img/bg/striped.png) no-repeat bottom right fixed;
+  background: url(../img/bg/striped.webp) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
