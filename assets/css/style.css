@@ -6,7 +6,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 a {
@@ -586,7 +586,7 @@ textarea {
 
 .vacancy-container {
   width: 85vW;
-  height: 45vH;
+  height: 50vH;
   display: block;
   justify-self: center;
   align-items: center;
@@ -676,6 +676,37 @@ input[type='file'] {
 
 /* ----------------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 
+/* ------------------ HEIGHT ------------------ */
+@media only screen and (min-height: 400px) {
+  #footer-details {
+    max-height: 25vH;
+  }
+}
+
+@media only screen and (min-height: 600px) {
+  #footer-details {
+    max-height: 22vH;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  #footer-details {
+    max-height: 20vH;
+  }
+
+  .vacancy-container {
+    height: 45vH;
+  }
+}
+
+@media only screen and (min-height: 900px) {
+  #footer-details {
+    max-height: 15vH;
+  }
+}
+
+/* ------------------ WIDTH ------------------ */
+
 /* EXTRA SMALL */
 
 @media only screen and (min-width: 575px) {
@@ -696,17 +727,6 @@ input[type='file'] {
     max-height: 12vW;
     max-width: 12vW;
   }
-
-  .vacancy-container {
-    display: inline-flex;
-    overflow: auto;
-  }
-
-  .vacancy-box {
-    width: 30%;
-    height: 95%;
-    align-content: space-evenly;
-  }
 }
 
 /* MEDIUM */
@@ -715,6 +735,17 @@ input[type='file'] {
   .menu-categories>div {
     height: 13vW;
     width: 13vW;
+  }
+
+  .vacancy-container {
+    display: inline-flex;
+    overflow: auto;
+  }
+
+  .vacancy-box {
+    width: 30%;
+    min-height: 95%;
+    align-content: space-evenly;
   }
 }
 
